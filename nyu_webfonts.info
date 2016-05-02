@@ -1,0 +1,4 @@
+name = NYU Webfonts
+description = A module to enable the NYU Gotham Webfonts on your site.
+core = 7.x
+package = NYU Modules

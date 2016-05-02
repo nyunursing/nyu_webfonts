@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function nyu_webfonts_menu() {
+  // Gotham Webfonts Configuration
+  $items['admin/config/system/nyu-webfonts'] = array(
+    'title' => t('NYU Webfonts'),
+    'description' => t('Set messages to appear in legalese across the site.'),
+    'page callback' => 'drupal_get_form',
+    'access arguments' => array('administer site configuration'),
+    'page arguments' => array('nyu_webfonts_callback'),
+    'file' => 'nyu_webfonts.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_preprocess_html().
+ *
+ * @see html.tpl.php
+ */ 
+function nyu_webfonts_preprocess_html(&$variables) {
+  $css_path = variable_get('nyu_webfonts_css_path');
+  drupal_add_css($css_path, array('type' => 'external', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => '0'));
+}
