@@ -4,7 +4,7 @@ This module enables setting up NYU H&Co. Gotham Webfonts for a Drupal site.
 It creates an administrative configuration page to control the environments css key, enabling easier managment of different webfont projects in between development and live environments.
 
 Steps to use this module:
-- Clone this git repo and install the module inside the modules directory renaming the folder to nyu_webfonts
+- Clone this git repo and install the module inside the modules directory
 - Enable the module
 - Add the css key url provided by the NYU Digital Communications team at admin/config/system/nyu-webfonts
 - Profit!
