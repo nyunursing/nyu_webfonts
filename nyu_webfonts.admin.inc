@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Admin page callbacks and functions for the Hartford Custom module.
+ * Administrative page callback.
  */
 
 /**
